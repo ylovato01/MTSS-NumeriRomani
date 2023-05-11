@@ -1,10 +1,16 @@
+////////////////////////////////////////////////////////////////////
+// Matteo Vignaga 1201147
+// Yuri Lovato 1238100
+////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
 public class IntegerToRoman 
 {
 	public static String convert(int value)
 	{
-		if (value==1000) return "M";
+		if (value==1000) {
+			return "M";
+		}
 
 		String str="";
 
@@ -107,6 +113,6 @@ public class IntegerToRoman
 				str+="IX";
 				break;
 		}
-		return str;  
+		return str;
 	}
 }
