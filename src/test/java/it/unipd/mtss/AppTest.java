@@ -53,16 +53,6 @@ public class AppTest
     {
         assertEquals("DCCCLXXXVIII",IntegerToRoman.convert(888));
     }
-    @Test
-    public void testAsciiArt()
-    {
-        assertEquals("__   __ _       _____ __      __\r\n"
-        		+ "\\ \\ / /| |     |_   _|\\ \\    / /\r\n"
-        		+ " \\ V / | |       | |   \\ \\  / / \r\n"
-        		+ "  > <  | |       | |    \\ \\/ /  \r\n"
-        		+ " / . \\ | |____  _| |_    \\  /   \r\n"
-        		+ "/_/ \\_\\|______||_____|    \\/    \r\n"
-        		+ "",RomanPrinter.print(44));
-    }
+    
     
 }

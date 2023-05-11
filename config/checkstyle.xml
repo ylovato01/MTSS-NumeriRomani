@@ -20,6 +20,7 @@
   <property name="max" value="200"/>
   </module>
   <module name="FileLength"/>
+  <module name="FileTabCharacter"/>
   <module name="Header">
     <property name="headerFile" value="config/header.txt"/>
     <property name="fileExtensions" value="java"/>
