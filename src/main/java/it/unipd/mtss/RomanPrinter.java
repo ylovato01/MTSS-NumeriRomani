@@ -21,6 +21,7 @@ public class RomanPrinter
 				//System.out.print(m[i][k]);dsadsadsa
 			}
 			m[i][k]="\n";
+			m[i][k]="aaa";
 			//sSystem.out.print(m[i][k]);
 		}
 	}
