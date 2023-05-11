@@ -7,8 +7,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
-        RomanPrinter rp=new RomanPrinter();
-        rp.print(3);
+        System.out.println( RomanPrinter.print(44));      
     }
 }
