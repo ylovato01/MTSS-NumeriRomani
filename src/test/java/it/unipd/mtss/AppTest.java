@@ -58,31 +58,7 @@ public class AppTest
     }
     @Test
     public void testAsciiArt()
-    {
-    	try {
-    	      File myObj = new File("filename.txt");
-    	      if (myObj.createNewFile()) {
-    	        System.out.println("File created: " + myObj.getName());
-    	      } else {
-    	        System.out.println("File already exists.");
-    	      }
-    	      FileWriter myWriter = new FileWriter("filename.txt");
-    	        myWriter.write("__   __ _       _____ __      __\r\n"
-    	        		+ "\\ \\ / /| |     |_   _|\\ \\    / /\r\n"
-    	        		+ " \\ V / | |       | |   \\ \\  / / \r\n"
-    	        		+ "  > <  | |       | |    \\ \\/ /  \r\n"
-    	        		+ " / . \\ | |____  _| |_    \\  /   \r\n"
-    	        		+ "/_/ \\_\\|______||_____|    \\/    \r\n"
-    	        		+ "\n"+RomanPrinter.print(44));
-    	        myWriter.close();
-    	        System.out.println("Successfully wrote to the file.");
-    	    } catch (IOException e) {
-    	      System.out.println("An error occurred.");
-    	      e.printStackTrace();
-    	      System.out.println("An error occurred.");
-    	        e.printStackTrace();
-    	    }
-        
+    {        
         assertEquals("__   __ _       _____ __      __\n"
         		+ "\\ \\ / /| |     |_   _|\\ \\    / /\n"
         		+ " \\ V / | |       | |   \\ \\  / / \n"
