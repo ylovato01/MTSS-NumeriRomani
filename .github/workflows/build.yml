@@ -73,13 +73,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: jacoco-report
-          path: target/site/jacoco/
+          path: report
 
       - name: Codecov
         uses: codecov/codecov-action@v3.1.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: target/site/jacoco/jacoco.xml
+          file: report/jacoco.xml
           name: codecov
           
           
