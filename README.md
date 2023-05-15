@@ -2,6 +2,7 @@
 ![coverage](.github/badges/jacoco.svg)
 ![branches_coverage](.github/badges/branches.svg)
 [![codecov](https://codecov.io/github/ylovato01/MTSS-NumeriRomani/branch/develop/graph/badge.svg?token=QOBA4Y589N)](https://codecov.io/github/ylovato01/MTSS-NumeriRomani)
+![Report](report/jacoco.xml)
 
 ## MTSS - Numeri Romani
 ### Componenti gruppo
