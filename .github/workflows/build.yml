@@ -61,7 +61,16 @@ jobs:
           echo "branches = ${{ steps.jacoco.outputs.branches}}"
       - name: Add badges
         run: git add .github/badges
-
+      - name: Commit files
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Added coverage badges" -a || true
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
      
 
       - name: Upload JaCoCo coverage report
