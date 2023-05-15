@@ -9,16 +9,14 @@
     <module name="NeedBraces"/>
     <module name="BooleanExpressionComplexity"/>
     <module name="CyclomaticComplexity">
-		<property name="max" value="30"/>
+		<property name="max" value="29"/>
 	</module>
     <module name="MethodLength"/>
     <module name="EmptyCatchBlock"/>
     <module name="AvoidStarImport"/>
     <module name="IllegalImport"/>
   </module>
-  <module name="LineLength">
-  <property name="max" value="200"/>
-  </module>
+  <module name="LineLength"/>
   <module name="FileLength"/>
   <module name="FileTabCharacter"/>
   <module name="Header">
