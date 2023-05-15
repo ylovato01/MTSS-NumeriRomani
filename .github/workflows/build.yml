@@ -1,11 +1,6 @@
 name: build
 
 on: [ push ]
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> feature/ciao
 jobs:
   build:
 
