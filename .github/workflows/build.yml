@@ -1,7 +1,6 @@
 name: build
 
 on: [ push ]
-
 jobs:
   build:
 
@@ -35,7 +34,7 @@ jobs:
         id: jacoco
         uses: cicirello/jacoco-badge-generator@v2.6.1
         with:
-          jacoco-csv-file: target/site/jacoco/jacoco.csv
+          jacoco-csv-file: report/jacoco.csv
           badges-directory: .github/badges
           generate-coverage-badge: true
           coverage-badge-filename: jacoco.svg
@@ -73,13 +72,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: jacoco-report
-          path: target/site/jacoco/
+          path: report
 
       - name: Codecov
         uses: codecov/codecov-action@v3.1.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: target/site/jacoco/jacoco.xml
+          file: report/jacoco.xml
           name: codecov
           
           
